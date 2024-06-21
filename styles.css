@@ -1,0 +1,330 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px;
+}
+
+/* Header styles */
+header.hero {
+  background-image: url("download.jpg"); /* Adjust background image path */
+  background-size: cover; /* Ensure background image fills the container */
+  background-position: center; /* Center background image */
+  padding: 50px 0;
+  color: #fff;
+  text-align: center; /* Center content within the header */
+}
+
+.logo {
+  width: 200px; /* Adjust logo width */
+  height: auto;
+}
+
+.company-name {
+  font-size: 2em; /* Adjust company name font size */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px; /* Add spacing between logo and company name */
+}
+
+
+.our-burgers {
+  background-color: #eee; /* Light beige background */
+  padding: 30px;
+  display: flex; /* Arrange burger cards side-by-side */
+  justify-content: space-around; /* Distribute cards evenly */
+}
+
+.burger-card {
+  animation: wiggle 0.5s infinite ease-in-out; /* Add a subtle wiggle animation */
+  /* Add hover and active state styles */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition effects */
+  cursor: pointer; /* Indicate clickable element on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Default shadow */
+}
+
+.burger-card:hover {
+  /* Styles for hover state */
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.burger-card:active {
+  /* Styles for active state (when clicked) */
+  transform: scale(1); /* Reset scale on active state */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduce shadow on active state */
+}
+
+h1 {
+  font-size: 4em; /* Increase heading font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+}
+
+
+.logo {
+  width: 200px; /* Adjust width as desired */
+  height: auto;
+  justify-items: left;
+  float:left;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Adjust line spacing for better readability */
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: #e04040; /* Red for "Order Online" button */
+}
+
+/* Navigation styles */
+nav.navigation {
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Distribute links evenly */
+}
+
+nav li {
+  margin: 0 10px; /* Adjust spacing between menu items */
+}
+
+nav a {
+  color: #333; /* Adjust text color */
+  text-decoration: none;
+  padding: 10px 15px; /* Adjust link padding */
+  font-weight: bold; /* Make navigation links bolder */
+}
+
+nav a:hover {
+  background-color: #250202; /* Highlight on hover */
+  color: #ddd;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative; /* Enable positioning for the dropdown menu */
+}
+
+.dropdown-toggle {
+  display: flex; /* Align dots and text horizontally */
+  align-items: center; /* Vertically center dots and text */
+}
+
+.dropdown:hover .dropdown-menu { /* Show dropdown menu on hover */
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute; /* Position the menu relative to the dropdown button */
+  top: 100%; /* Display below the button */
+  left: 0; /* Align to the left of the button */
+  background-color: #eee; /* Match navigation background color */
+  padding: 10px;
+  list-style: none;
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.dropdown-menu li {
+  margin: 5px 0; /* Adjust spacing between dropdown items */
+}
+
+.dropdown-menu a {
+  color: #333; /* Match navigation link color */
+}
+
+.dropdown-menu a:hover {
+  background-color: #250202; /* Highlight on hover */
+}
+
+/* Dots styling */
+.dots {
+  margin-left: 5px; /* Add space between text and dots */
+  font-size: 18px; /* Adjust dot size */
+}
+
+.dots:after {
+  content: '\00b7 \00b7 \00b7'; /* Create three dots using unicode characters */
+  /* You can also use an image sprite for the dots if preferred */
+}
+
+
+
+
+/* Why Choose Us Section */
+
+.why-choose-us {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 30px;
+  animation: fade-in 2s ease-in-out; /* Add a fade-in animation */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Our Burgers Section */
+
+.our-burgers {
+  background-color: #eee; /* Light beige background */
+  padding: 30px;
+  display: flex; /* Arrange burger cards side-by-side */
+  justify-content: space-around; /* Distribute cards evenly */
+}
+
+.burger-card {
+  animation: wiggle 0.5s infinite ease-in-out; /* Add a subtle wiggle animation */
+  /* Add hover and active state styles */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition effects */
+  cursor: pointer; /* Indicate clickable element on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Default shadow */
+  margin :1px;
+}
+
+.burger-card:hover {
+  /* Styles for hover state */
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.burger-card:active {
+  /* Styles for active state (when clicked) */
+  transform: scale(1); /* Reset scale on active state */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduce shadow on active state */
+}
+
+.testimonials {
+  background-color: #fff; /* White background */
+  padding: 30px;
+  overflow: hidden; /* Hide overflowing content from marquee */
+}
+
+.quotes-container {
+  text-align: center; /* Center the quotes */
+  margin: 0 auto; /* Center the quotes horizontally */
+  width: 60%; /* Set a width for the quotes container */
+  height: 100px; /* Set a height for the marquee container (adjust as needed) */
+  /* Remove default marquee styling (optional) */
+  marquee {
+    display: block;
+    margin: 0 auto;
+    width: fit-content; /* Adjust width for longer quotes */
+    padding: 10px; /* Add padding if needed */
+    background-color: #fff; /* Match background color */
+    border-radius: 5px; /* Add rounded corners (optional) */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Subtle shadow (optional) */
+  }
+}
+
+.quotes-container {
+  text-align: center; /* Center the quotes */
+  margin: 0 auto; /* Center the quotes horizontally */
+  width: 60%; /* Set a width for the quotes container */
+}
+
+
+/* Order Online Section */
+
+.order-online {
+  background-color: #f0f0f0; /* Light background */
+  padding: 30px;
+}
+
+.animated-text {
+  animation: text-pulse 1s infinite ease-in-out; /* Add a pulse animation to the heading */
+}
+
+@keyframes text-pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.button {
+  margin: 10px; /* Add spacing between buttons */
+  padding: 10px 20px; /* Adjust button padding */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #ddd; /* Change button color on hover */
+}
+
+.button.primary {
+  background-color: #333; /* Set primary button color */
+  color: #fff; /* White text for primary button */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 5px;
+}
